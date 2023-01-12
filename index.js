@@ -1,9 +1,8 @@
-
+process.env["TOKEN"] = "MTA2MjQxOTk4NTA1MTQzOTExNQ.G9EdCD.l_mYQSsSIk8F0sTQE1zQwJW27z26g6KQh7FNIw"
 const { Partials, Client, Collection, GatewayIntentBits } = require('discord.js')
 
 const path = require('node:path');
 const wrench = require("wrench");
-const keepAlive = require("./server");
 
 const client = new Client({
   intents: [
@@ -36,5 +35,4 @@ files.forEach(async (file) => {
 //-------------------------------------------------------------------------------------------
 
 const token = process.env['TOKEN']
-keepAlive()
 client.login(token)
