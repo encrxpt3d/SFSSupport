@@ -1,4 +1,5 @@
-process.env["TOKEN"] = "MTA2MjQxOTk4NTA1MTQzOTExNQ.G9EdCD.l_mYQSsSIk8F0sTQE1zQwJW27z26g6KQh7FNIw"
+require('dotenv').config()
+
 const { Partials, Client, Collection, GatewayIntentBits } = require('discord.js')
 
 const path = require('node:path');
