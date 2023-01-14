@@ -27,7 +27,7 @@ module.exports = {
                 }
             })
             interaction.reply({
-                content: `Successfully deleted **${numChannels}** channels which names include the query of \`${query}\`.`,
+                content: `Successfully deleted **${numChannels}** channel(s) which names include the query of \`${query}\`.`,
                 ephemeral: true
             })
         }
